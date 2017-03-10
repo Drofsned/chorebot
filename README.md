@@ -1,2 +1,2 @@
 # chorebot
-Robot to assign my kids chores.
+A raspberry pi robot to assign my kids chores.
