@@ -18,7 +18,7 @@ def main():
                 text = raw_input('Say: ')
                 if text == "":
                         text = NO_TEXT_MESSAGE
-                if text in EXIT_LIST:
+                if text.lower() in EXIT_LIST:
                         text = GOODBYE_MESSAGE 
                         loop = False
                 os.system(generate_output(text))
