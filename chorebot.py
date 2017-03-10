@@ -8,17 +8,18 @@ LANG = "english-us"
 MALES = ["+m"+str(i) for i in range(1,8)]
 FEMALES = ["+f"+str(i) for i in range(1,5)]
 EXIT_LIST = ["bye", "bye bye", "later", "goodbye", "so long"]
+NO_TEXT_MESSAGE = "You didn't type anything for me to say. What are you thinking Broh!"
+GOODBYE_MESSAGE = "Later broh"
 
 def main():
-        text = "Clean your room..."
         loop = True
 
         while loop:
                 text = raw_input('Say: ')
                 if text == "":
-                        text = "You didn't type anything for me to say. What are you thinking?"
+                        text = NO_TEXT_MESSAGE
                 if text in EXIT_LIST:
-                        text = "Later broh!"
+                        text = GOODBYE_MESSAGE 
                         loop = False
                 os.system(generate_output(text))
 
